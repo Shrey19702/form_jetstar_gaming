@@ -1,7 +1,14 @@
 const express = require('express');
+const dotenv = require('dotenv').config();
+port= process.env.PORT || 5000;
+
 const app = express();  // launching the server
 
-port=8000;
+app.get('/', (req, res)=>{ 
+    res.send("This works");
+})
+
+app.use('/api', require('./routes'));
 
 app.listen(port, 
     function(error){
