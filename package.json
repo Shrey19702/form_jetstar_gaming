@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Shrey19702/form_jetstar_gaming#readme",
   "dependencies": {
+    "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "mongoose": "^6.9.2"
